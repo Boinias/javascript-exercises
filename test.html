@@ -9,15 +9,19 @@
 <body>
     <script>
 
-const reverseString = function(word) {
-    return word
-    .split('')
-    .reverse()
-    .join('')
-};
+const removeFromArray = function(array, ...args) {
+    const a = array
+    function forRemoval (value) {
+        return value != args[1]
+    }
+    const filtered = a.filter(forRemoval);
+    return filtered
+}
 
-console.log (reverseString('hello'))
+console.log (removeFromArray([1, 2, 3, 4], 3, 2))
 
-    </script>
+</script>
 </body>
 </html>
+
+
