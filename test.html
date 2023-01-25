@@ -9,18 +9,15 @@
 <body>
     <script>
 
-    const repeatString = function(word,times) {
-    let answer = ""
-    let i = 0
-    while (i < times) {
-        answer += word
-    i++;
-    }
-    return answer
-}
+const reverseString = function(word) {
+    return word
+    .split('')
+    .reverse()
+    .join('')
+};
 
-console.log (repeatString('hey', 1  ))
-console.log (answer)
+console.log (reverseString('hello'))
+
     </script>
 </body>
 </html>
