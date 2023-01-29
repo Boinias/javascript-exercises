@@ -89,7 +89,7 @@ return answer
 
 console.log(removeFromArray([1, 2, 3, 4], 3, 2))*/
 
-
+/*
 let answer = ""
 
 const removeFromArray = function(array, ...args) {
@@ -103,6 +103,27 @@ return answer
 console.log(removeFromArray([1, 2, 3, 4], 3, 2))
 
 i need to call time on this, i cant do it
+
+*/
+
+const sumAll = function(a,b) {
+    let answer;
+    if (a < b) {
+    for (let i = a; a < b; i++) {
+    answer += i
+    }
+    } else if (a > b) {
+    for (let i = b; b < a;i++) {
+        answer += i
+    }
+    }
+    return answer
+};
+
+console.log (sumAll(1, 4))
+
+
+
 </script>
 </body>
 </html>
