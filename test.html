@@ -74,19 +74,35 @@ const removeFromArray = function(array, ...args) {
 }
 */
 
-/*Attempt six*/
+/*Attempt six
 
 let answer = ""
 
 const removeFromArray = function(array, ...args) {
-    for (let i = 0; i < args.length-1; i++) {
+    let answer = "";
+    for (let i = 0; i < args.length; i++) {
     let index = array.indexOf.args[i]
-    answer += array.splice(index,1)
+    answer = array.splice(index,1)
 }
 return answer
 }
 
-console.log(removeFromArray([1, 2, 3, 4], 3))
+console.log(removeFromArray([1, 2, 3, 4], 3, 2))*/
+
+
+let answer = ""
+
+const removeFromArray = function(array, ...args) {
+    let answer = "";
+    let index = array.indexOf.args[0]
+    answer = array.splice(index,1)
+}
+return answer
+}
+
+console.log(removeFromArray([1, 2, 3, 4], 3, 2))
+
+i need to call time on this, i cant do it
 </script>
 </body>
 </html>
