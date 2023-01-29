@@ -9,17 +9,84 @@
 <body>
     <script>
 
+/*attempt one
+
 const removeFromArray = function(array, ...args) {
     const a = array
     function forRemoval (value) {
-        return value != args[1]
+        return value != args
     }
     const filtered = a.filter(forRemoval);
     return filtered
 }
 
 console.log (removeFromArray([1, 2, 3, 4], 3, 2))
+*/
 
+/*test 0f args.legth - works as expected in isolation
+
+const removeFromArray = function(array, ...args) {
+    const a = args.length
+    return a
+}
+
+console.log (removeFromArray([1, 2, 3, 4], 3, 2))
+*/
+
+/*attempt two
+
+const removeFromArray = function(array, ...args) {
+    const a = array
+    const filtered = ``
+    for (let i = 0; i < args.length; i++) {
+    function forRemoval (value) {
+        return value == args[i]
+    filtered += `${a.filter(forRemoval)}`
+    }
+    return filtered
+}
+}
+
+console.log (removeFromArray([1, 2, 3, 4], 3, 2))
+
+/*attempt four
+
+const removeFromArray = function(array, ...args) {
+    const a = array
+    function forRemoval (value) {
+        return value.includes(args)
+    }
+    const filtered = a.filter(forRemoval);
+    return filtered
+}
+
+console.log (removeFromArray([1, 2, 3, 4], 3, 2))
+*/
+
+/*Had help. Scimmedf the solution and looks like you need to use forEach and includes
+(item) so mabe try that - attempt five
+
+const removeFromArray = function(array, ...args) {
+    array.forEach(item => {
+        
+        
+    });
+}
+*/
+
+/*Attempt six*/
+
+let answer = ""
+
+const removeFromArray = function(array, ...args) {
+    for (let i = 0; i < args.length-1; i++) {
+    let index = array.indexOf.args[i]
+    answer += array.splice(index,1)
+}
+return answer
+}
+
+console.log(removeFromArray([1, 2, 3, 4], 3))
 </script>
 </body>
 </html>
