@@ -20,11 +20,20 @@
 console.log (leapYears(1996))*/
 
 const convertToCelsius = function(input) {
-  let answer = math.round((input-32)*.5556)
-  return answer
+  let answer = (input-100)*.5556;
+  answer = Math.round(answer*10) / 10;
+  return answer;
 };
 
-console.log (convertToCelsius(32))
+// console.log (convertToCelsius(32))
+
+const convertToFahrenheit = function(input) {
+    let answer = (input*1.8)+32;
+    answer = Math.round(answer*10) / 10;
+    return answer;
+};
+
+console.log (convertToFahrenheit(-10))
     </script>
 </head>
 <body>
